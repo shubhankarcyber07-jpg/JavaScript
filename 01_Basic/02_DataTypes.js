@@ -29,3 +29,58 @@ console.log(typeof num); // bigint
 // boolean => true or false
 // null => empty value
 // undefined => value is not assigned
+
+
+
+// primitives are immutable, they cannot be changed, but we can reassign them to a new value.
+
+/* 7 types of data types in JavaScript
+     1. Number
+     2. String
+     3. Boolean
+     4. Null
+     5. Undefined
+     6. BigInt
+     7. Symbol
+*/
+
+const id = Symbol('123'); // symbol
+const anotherId = Symbol('123'); // symbol
+
+console.log(id === anotherId);
+
+// Reference or Non-primitive data types in JavaScript
+/*
+    1. Object
+    2. Array
+    3. Function
+*/
+
+// Array is a collection of values, which can be of any data type. It is an ordered list of values, which can be accessed by their index. The index starts from 0.
+
+let fruits = ["Apple", "Banana", "Mango", "Orange"];
+
+console.log(fruits); // Apple,Banana,Mango,Orange
+console.log(fruits.length); // 4
+
+
+// Object is a collection of key-value pairs, which can be of any data type. It is an unordered list of values, which can be accessed by their key.
+
+let person = {
+    name: "Shubhankar",
+    age: 25,
+    isStudent: true
+};
+
+console.log(person); // { name: 'Shubhankar', age: 25, isStudent: true } 
+
+// Function is a block of code that can be executed when called. It can take parameters and return a value.
+
+function greet(name) {
+    console.log("Wellcome to JavaScript world, " + name);
+    return `Hello, ${name}!`;
+}
+
+console.log(greet("Shubhankar")); // Hello, Shubhankar!
+
+// javascript is a dynamically typed language, which means we don't have to specify the data type of a variable when we declare it. The data type is determined automatically based on the value assigned to the variable.
